@@ -1127,4 +1127,19 @@ a {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
+
+.partners {
+  background: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.partners-box {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.partners__item {
+  width: 15%;
+}
 /*# sourceMappingURL=main.css.map */
