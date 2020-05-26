@@ -761,7 +761,7 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .how-to .section__title {
@@ -836,5 +836,74 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+
+.reasons {
+  margin-bottom: 50px;
+}
+
+.reasons-box {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.reasons__item {
+  display: block;
+  width: 23%;
+  -webkit-box-shadow: 0 0 10px #dedede;
+          box-shadow: 0 0 10px #dedede;
+  border-radius: 5px;
+}
+
+.reasons__item-top {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  border-bottom: 2px solid #FF6F00;
+  z-index: 1;
+}
+
+.reasons__item-top img {
+  width: 120px;
+}
+
+.reasons__item-top::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #FF6F00;
+  z-index: 2;
+  left: 50%;
+  bottom: -25px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+}
+
+.reasons__item-bottom {
+  padding: 40px 20px;
+}
+
+.reasons__title {
+  margin-bottom: 10px;
+}
+
+.reasons__description {
+  font-family: "Segoe UI Semilight", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */

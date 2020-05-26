@@ -1,0 +1,58 @@
+.reasons {
+  margin-bottom: 50px;
+}
+
+.reasons-box {
+  align-items: unset;
+}
+
+.reasons__item {
+  display: block;
+  width: 23%;
+  box-shadow: 0 0 10px #dedede;
+  border-radius: 5px;
+}
+
+.reasons__item-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-bottom: 2px solid $main-color;
+  z-index: 1;
+  img {
+    width: 120px;
+  }
+
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid $main-color;
+    z-index: 2;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background: #fff;
+  }
+}
+
+.reasons__item-bottom {
+  padding: 40px 20px;
+}
+
+.reasons__title {
+  margin-bottom: 10px;
+}
+
+.reasons__description {
+  font-family: "Segoe UI Semilight", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
