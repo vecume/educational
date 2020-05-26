@@ -1131,7 +1131,6 @@ a {
 .partners {
   background: #fff;
   padding-bottom: 50px;
-  margin-bottom: 50px;
 }
 
 .partners-box {
@@ -1141,5 +1140,13 @@ a {
 
 .partners__item {
   width: 15%;
+}
+
+.map {
+  min-height: 385px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /*# sourceMappingURL=main.css.map */
