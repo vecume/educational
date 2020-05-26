@@ -4,13 +4,20 @@
 
 .feedbacks__slider {
   margin-top: 100px;
+  width: 100%;
+}
+
+.feedbacks-slider-item {
+  width: 100%;
 }
 
 .feedbacks__item {
   position: relative;
-  width: 48%;
+  width: 45%;
   padding: 40px;
   background: #fff;
+  
+  z-index: 1000;
 
   h5 {
     font-size: 20px;

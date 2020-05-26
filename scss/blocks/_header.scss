@@ -29,7 +29,9 @@
       border-bottom: 1px solid $main-color;
     }
   }
+
 }
+
 
 .enter-to-webinar {
   padding: 15px 30px;
@@ -158,6 +160,10 @@
   margin-bottom: 40px;
 }
 
+.slider__wrapper {
+  width: 100%;
+}
+
 .slide__description {
   width: 60%;
   margin: 0 auto;
@@ -180,3 +186,4 @@
     transform: translateY(-5px);
   }
 }
+
