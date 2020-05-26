@@ -42,3 +42,17 @@
     }
   }
 }
+
+
+
+@media only screen and (max-width: 650px) {
+  .why__item {
+    padding: 20px 40px;
+
+    span {
+      font-size: 100px;
+      bottom: -35px;
+      left: -25px;
+    }
+  }
+}

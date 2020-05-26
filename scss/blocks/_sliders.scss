@@ -70,3 +70,37 @@
     left: -60px;
   }
 }
+
+
+
+@media only screen and (max-width: 900px) {
+  .slider-controllers {
+    width: 250px;
+  
+    li {
+      button {
+        width: 30px;
+      }
+    }
+  }
+  
+  .gallery__slider {
+    .header-next {
+      transform: scale(0.5);
+    }
+    
+    .header-prev {
+      transform: scale(0.5);
+    }
+  }
+  .partners-box {
+    .header-next {
+      transform: scale(0.5);
+    }
+    
+    .header-prev {
+      transform: scale(0.5);
+    }
+  }
+}
+

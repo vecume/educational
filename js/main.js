@@ -37,19 +37,56 @@ elFeedbacksSliderWrapper.slick({
   slidesToScroll: 2,
   arrows: false,
   dots: true,
-  dotsClass: 'slider-controllers'
+  dotsClass: 'slider-controllers',
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 });
 
 elGallerySliderWrapper.slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: '<button type="button" class="btn header-next"><img src="img/arrow-right.png" alt=""></button>',
-  prevArrow: '<button type="button" class="btn header-prev"><img src="img/arrow-left.png" alt=""></button>'
+  prevArrow: '<button type="button" class="btn header-prev"><img src="img/arrow-left.png" alt=""></button>',
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 elPartnersSliderWrapper.slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   nextArrow: '<button type="button" class="btn header-next"><img src="img/arrow-right.png" alt=""></button>',
-  prevArrow: '<button type="button" class="btn header-prev"><img src="img/arrow-left.png" alt=""></button>'
+  prevArrow: '<button type="button" class="btn header-prev"><img src="img/arrow-left.png" alt=""></button>',
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });

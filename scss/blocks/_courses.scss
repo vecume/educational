@@ -112,3 +112,26 @@
   }
   margin-bottom: 25px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .courses__box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .courses__item {
+    margin-bottom: 25px;
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .courses__box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .courses__item {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
