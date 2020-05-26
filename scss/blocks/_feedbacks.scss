@@ -13,11 +13,12 @@
 
 .feedbacks__item {
   position: relative;
-  width: 45%;
+  width: 500px;
   padding: 40px;
   background: #fff;
-  
   z-index: 1000;
+  margin-right: 25px;
+  margin-left: 25px;
 
   h5 {
     font-size: 20px;

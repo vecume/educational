@@ -720,8 +720,6 @@ a {
   position: absolute;
   top: 50%;
   right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   z-index: 10;
   outline: none;
 }
@@ -730,10 +728,70 @@ a {
   position: absolute;
   top: 50%;
   left: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   z-index: 10;
   outline: none;
+}
+
+.slider-controllers {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.slider-controllers li {
+  font-size: 0;
+}
+
+.slider-controllers li button {
+  cursor: pointer;
+  border: none;
+  height: 2px;
+  width: 50px;
+  background: #707070;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.slider-controllers .slick-active button {
+  background: #FF6F00;
+}
+
+.gallery__slider .header-next {
+  right: -50px;
+}
+
+.gallery__slider .header-prev {
+  left: -50px;
+}
+
+.partners-box .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners-box .header-next {
+  right: -60px;
+}
+
+.partners-box .header-prev {
+  left: -60px;
 }
 
 .container {
@@ -1402,10 +1460,12 @@ a {
 
 .feedbacks__item {
   position: relative;
-  width: 45%;
+  width: 500px;
   padding: 40px;
   background: #fff;
   z-index: 1000;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .feedbacks__item h5 {
@@ -1447,6 +1507,11 @@ a {
   padding-bottom: 100px;
 }
 
+.gallery__slider {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .greeting-text {
   text-align: center;
   margin-bottom: 25px;
@@ -1455,6 +1520,8 @@ a {
 
 .gallery__item {
   width: 32%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .ads-block {
@@ -1497,12 +1564,15 @@ a {
 }
 
 .partners-box {
+  width: 85%;
+  margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .partners__item {
-  width: 15%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .map {

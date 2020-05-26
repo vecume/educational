@@ -5,9 +5,12 @@
 }
 
 .partners-box {
+  width: 85%;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
 .partners__item {
-  width: 15%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
