@@ -369,6 +369,11 @@ template {
   display: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -687,7 +692,7 @@ a {
   position: relative;
   padding: 30px;
   padding-bottom: 15px;
-  min-height: 200px;
+  min-height: 230px;
   background: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -747,6 +752,89 @@ a {
 }
 
 .courses__box--2 .courses__bottom {
-  min-height: 250px;
+  min-height: 280px;
+}
+
+.how-to {
+  padding: 50px 0;
+  background-image: url("../img/bg2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.how-to .section__title {
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.steps-box {
+  width: 100%;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.steps__item {
+  width: 28%;
+  padding: 80px 30px 30px 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.steps__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -60px;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #222;
+          box-shadow: 0 0 10px #222;
+}
+
+.steps__img img {
+  width: 60px;
+}
+
+.steps__title {
+  margin-bottom: 15px;
+}
+
+.steps__description {
+  font-size: 14px;
+  font-family: "Segoe UI Semilight", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+.steps__img-book img {
+  width: 45px;
+}
+
+.transition-block {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: block;
+  width: 12px;
+  height: 18px;
+  background-image: url("../img/transition-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 /*# sourceMappingURL=main.css.map */
