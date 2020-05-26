@@ -1,0 +1,178 @@
+.header__top {
+  padding: 25px 0;
+}
+
+.logo {
+  width: 35%;
+}
+
+.contacts-box {
+  text-align: right;
+  h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $main-color;
+    border-bottom: 1px dashed $main-color;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    font-weight: 500;
+    padding-bottom: 2px;
+
+    &:hover, &:focus {
+      border-bottom: 1px solid $main-color;
+    }
+  }
+}
+
+.enter-to-webinar {
+  padding: 15px 30px;
+  color: #fff;
+  background: $main-color;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+
+  &:hover, &:focus {
+    transform: translateY(-5px);
+  }
+}
+
+
+.languages {
+  position: relative;
+}
+
+.languages__list {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  border-radius: 0;
+  display: none;
+  z-index: 100;
+  background: #fff;
+  padding: 15px;
+  border-radius:5px;
+}
+
+.languages {
+  &:hover .languages__list, &:focus .languages__list {
+    display: block;
+  }
+}
+
+.language__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #535353;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.language__option--active {
+  width: 80px;
+  border-radius: 5px;
+  margin: 0;
+  &::after {
+    display: block;
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/down.png");
+    background-position: center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+///////////////////////////////////////
+//BOTTOM-HEADER
+//////////////////////////////////////
+
+.header__bottom {
+  padding: 50px 0;
+  background-image: url("../img/header-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar__menu {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+.menu__link {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  transition: 0.3s ease;
+  font-size: 15px;
+  border-radius: 5px;
+
+  &:hover, &:focus {
+    background: $main-color;
+  } 
+}
+
+.menu__link--active {
+  background: $main-color;
+}
+
+.menu__link--news {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 50%;
+    top: 5px;
+    right: 10px;
+    background: #FF2E2E;
+  }
+}
+
+.header__slider {
+  color: #fff;
+  text-align: center;
+}
+
+.slide__title {
+  font-size: 65px;
+  margin-bottom: 40px;
+}
+
+.slide__description {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Segoe UI Semilight";
+  margin-bottom: 40px;
+}
+
+.reg-for-course-link {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  background: $main-color;
+  border-radius: 5px;
+  transition: 0.3s ease;
+
+  &:hover, &:focus {
+    transform: translateY(-5px);
+  }
+}
