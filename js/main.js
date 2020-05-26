@@ -2,10 +2,34 @@ const elHeaderSliderWrapper = $('.header__slider');
 const elFeedbacksSliderWrapper = $('.feedbacks__slider');
 const elPartnersSliderWrapper = $('.partners-box');
 const elGallerySliderWrapper = $('.gallery__slider');
+const elLayer = $('.layer');
+const elMenuBtn = $('.btn-menu');
+const elNavBar = $('.navbar');
+
+
+elMenuBtn.on('click', () => {
+  elMenuBtn.toggleClass('menu-btn--active');
+  elNavBar.toggleClass('navbar--active');
+  elLayer.toggleClass('layer--active');
+});
+
+
+
+
+
 
 elHeaderSliderWrapper.slick({
   nextArrow: '<button type="button" class="btn header-next"><img src="img/header-a-right.png" alt=""></button>',
-  prevArrow: '<button type="button" class="btn header-prev"><img src="img/header-a-left.png" alt=""></button>'
+  prevArrow: '<button type="button" class="btn header-prev"><img src="img/header-a-left.png" alt=""></button>',
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
 });
 
 elFeedbacksSliderWrapper.slick({
