@@ -34,11 +34,14 @@
 
 .order-call-btn {
   color: $main-color;
+  border: none;
   border-bottom: 1px dashed $main-color;
   letter-spacing: 1px;
   transition: 0.3s ease;
   font-weight: 500;
   padding-bottom: 2px;
+  background: #fff;
+  outline: none;
 
   &:hover, &:focus {
     border-bottom: 1px solid $main-color;
