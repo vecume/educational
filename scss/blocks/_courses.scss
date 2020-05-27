@@ -31,17 +31,22 @@
   justify-content: space-around;
   align-items: unset;
   width: 100%;
-  margin-bottom: 150px;
-
+  margin-bottom: 50px;
   
 }
 
 .courses__item {
   width: 30%;
   overflow: hidden;
+  transition: 0.3s ease;
+
   img {
     height: 250px;
     object-fit: cover;
+  }
+
+  &:hover, &:focus {
+    transform: scale(1.05);
   }
 }
 
@@ -64,6 +69,7 @@
   flex-direction: column;
   align-items: unset;
   h3 {
+    color: #000;
     margin-bottom: 25px;
   }
   

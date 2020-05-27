@@ -5,7 +5,16 @@ const elGallerySliderWrapper = $('.gallery__slider');
 const elLayer = $('.layer');
 const elMenuBtn = $('.btn-menu');
 const elNavBar = $('.navbar');
+const elsGalleryItems = $('a.gallery__item[data-fancybox="gallery"]');
 
+
+elsGalleryItems.fancybox({
+  keyboard: true,
+  closeExisting: false,
+  animationEffect: "zoom",
+  transitionEffect: "zoom-in-out",
+  hideScrollbar: true
+});
 
 elMenuBtn.on('click', () => {
   elMenuBtn.toggleClass('menu-btn--active');

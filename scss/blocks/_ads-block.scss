@@ -1,30 +1,9 @@
 .ads-block {
-  padding: 70px 0;
   background-image: url("../img/ads-block.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
-  color: #fff;
-  padding-bottom: 100px;
-
-  h3 {
-    font-size: 50px;
-    margin: 80px 0;
-    font-weight: normal;
-  }
-
-  a {
-    display: inline-block;
-    padding: 20px 40px;
-    color: #fff;
-    font-weight: bold;
-    background: $main-color;
-    border-radius: 5px;
-    transition: 0.3s ease;
-
-    &:hover, &:focus {
-      transform: translateY(-5px);
-    }
-  }
+  width: 100%;
+  height: 450px;
 }
