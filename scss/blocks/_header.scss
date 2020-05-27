@@ -321,3 +321,29 @@
     font-size: 16px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .btn-menu {
+    display: block;
+    position: fixed;
+    z-index: 50;
+    top: 28px;
+    left: 2.5%;
+  }
+  .logo {
+    width: 60%;
+  }
+  .languages__list {
+    top: 40px;
+    padding: 5px; 
+  }
+  .language__option--active {
+    width: 40px;
+  }
+  .slide__title {
+    font-size: 30px;
+  }
+  .slide__description {
+    font-size: 16px;
+  }
+}
