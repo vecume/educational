@@ -58,5 +58,10 @@
       bottom: -35px;
       left: -25px;
     }
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        background-image: url("../img/r#{$i}-m.png");
+      }
+    }
   }
 }
