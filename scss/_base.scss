@@ -10,6 +10,10 @@ body {
   background: #F1F1F1;
 }
 
+.body-disable-overflow {
+  overflow-y: hidden;
+}
+
 ul {
   margin: 0;
   padding: 0;

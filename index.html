@@ -8,6 +8,30 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="regform order-call-modal">
+    <div class="container">
+      <button class="btn regform-cancel order-call-cancel-btn">x</button>
+      <h3 class="regform__title">Закажите звонок у нашихконсультантов</h3>
+      <p class="regform__description">Мы свяжемся с Вами, чтобы ответит на все ваши вопросы и помочь с выбором курсов</p>
+      <form method="GET" class="reg-form">
+        <label><input type="text" placeholder="Ваше имя:" required></label>
+        <label><input type="text" placeholder="Номер телефона:" required></label>
+        <button type="submit" class="btn reg-form-submit-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="regform reg-for-course-modal">
+    <div class="container">
+      <button class="btn regform-cancel reg-for-course-cancel-btn">x</button>
+      <h3 class="regform__title">Оставьте заявку прямо сейчас и получите скидку в размере от 30% до 50%</h3>
+      <p class="regform__description">Мы свяжемся с Вами, чтобы ответит на все ваши вопросы и подобрать подходяший Вам курс</p>
+      <form method="GET" class="reg-form">
+        <label><input type="text" placeholder="Ваше имя:" required></label>
+        <label><input type="text" placeholder="Номер телефона:" required></label>
+        <button type="submit" class="btn reg-form-submit-btn">Получить скидку</button>
+      </form>
+    </div>
+  </div>
   <div class="layer"></div>
   <header class="main-header">
     <div class="container">
@@ -21,7 +45,7 @@
         </div>
         <div class="contacts-box">
           <h4>+998 (99) 851-80-13</h4>
-          <a href="tel:+998998518013">Заказать звонок</a>
+          <button class="btn order-call-btn" href="tel:+998998518013">Заказать звонок</button class="btn order-call-btn">
         </div>
         <a href="#" class="enter-to-webinar">Войти на вебинар</a>
         <div class="languages">
@@ -51,7 +75,7 @@
             </div>
             <div class="contacts-box">
               <h4>+998 (99) 851-80-13</h4>
-              <a href="tel:+998998518013">Заказать звонок</a>
+              <buttton type="button" class="btn order-call-btn ">Заказать звонок</buttton>
             </div>
             <a href="#" class="enter-to-webinar">Войти на вебинар</a>
           </div>
@@ -62,14 +86,14 @@
               <h1 class="slide__title">Мы предоставляем доступное обучение для всех!</h1>
               <p class="slide__description">Стань специалистом: Аудита, бухгалтерии, 1с бухгалтерии и аутсорсинга, зарабатывай деньги!</p>
             </div>
-            <a href="#" class="reg-for-course-link">Регистрация на курсы</a>
+            <button type="button" class="btn reg-for-course-btn">Регистрация на курсы</button>
           </div>
           <div class="slider__wrapper">
             <div class="slide">
               <h1 class="slide__title">При заключении договора доконца июля 2020г. действует скидкана дистанционное обучение</h1>
               <p class="slide__description">Для физических лиц 30% Для юредических лиц 30% - 50%в зависимости от суммы договора!</p>
             </div>
-            <a href="#" class="reg-for-course-link">Регистрация на курсы</a>
+            <button type="button" class="btn reg-for-course-btn">Регистрация на курсы</button>
           </div>
         </div>
       </div>

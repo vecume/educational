@@ -6,6 +6,32 @@ const elLayer = $('.layer');
 const elMenuBtn = $('.btn-menu');
 const elNavBar = $('.navbar');
 const elsGalleryItems = $('a.gallery__item[data-fancybox="gallery"]');
+const elOrderCallBtn = $('.order-call-btn');
+const elOrderCallModal = $('.order-call-modal');
+const elRegForCourseModal = $('.reg-for-course-modal');
+const elRegForCourseBtn = $('.reg-for-course-btn');
+const elOrderCallCancelBtn = $('.order-call-cancel-btn');
+const elRegForCourseCancelBtn = $('.reg-for-course-cancel-btn');
+
+elRegForCourseBtn.on('click', () => {
+  elRegForCourseModal.addClass('regform--active');
+  $('body').addClass('body-disable-overflow');
+});
+
+elOrderCallBtn.on('click', () => {
+  elOrderCallModal.addClass('regform--active');
+  $('body').addClass('body-disable-overflow');
+});
+
+elOrderCallCancelBtn.on('click', () => {
+  elOrderCallModal.removeClass('regform--active');
+  $('body').removeClass('body-disable-overflow');
+}); 
+
+elRegForCourseCancelBtn.on('click', () => {
+  elRegForCourseModal.removeClass('regform--active');
+  $('body').removeClass('body-disable-overflow');
+}); 
 
 
 elsGalleryItems.fancybox({
@@ -20,6 +46,7 @@ elMenuBtn.on('click', () => {
   elMenuBtn.toggleClass('menu-btn--active');
   elNavBar.toggleClass('navbar--active');
   elLayer.toggleClass('layer--active');
+  $('body').toggleClass('body-disable-overflow');
 });
 
 
