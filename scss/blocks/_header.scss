@@ -242,6 +242,7 @@
     z-index: 30;
     transform: translateX(-150%);
     transition: 0.3s ease;
+    overflow-y: scroll;
   }
   .navbar--active {
     transform: translateX(0);
