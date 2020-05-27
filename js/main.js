@@ -126,3 +126,7 @@ elPartnersSliderWrapper.slick({
     }
   ]
 });
+
+const observer = lozad();
+observer.observe();
+
